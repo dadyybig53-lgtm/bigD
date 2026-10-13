@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Dashboard — Big Daddy</title>
+  <link rel="stylesheet" href="admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+  <!-- Auth guard overlay shown while checking session -->
+  <div id="authGuard" class="auth-guard">
+    <div class="auth-guard-spinner"></div>
+  </div>
+
+  <div id="dashboardView" class="admin-dashboard" style="display:none">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="sidebar-brand">
+        <span class="sidebar-icon">👑</span>
+        <div>
+          <div class="sidebar-title">Big Daddy</div>
+          <div class="sidebar-sub">Admin Panel</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#section-overview" class="sidebar-link active" data-section="overview">
+          <span class="nav-icon">📊</span> Overview
+        </a>
+        <a href="#section-website" class="sidebar-link" data-section="website">
+          <span class="nav-icon">🌐</span> Website Status
+        </a>
+        <a href="#section-whatsapp" class="sidebar-link" data-section="whatsapp">
+          <span class="nav-icon">💬</span> WhatsApp Number
+        </a>
+        <a href="#section-today" class="sidebar-link" data-section="today">
+          <span class="nav-icon">📅</span> Today's Visitors
+        </a>
+        <a href="#section-emails" class="sidebar-link" data-section="emails">
+          <span class="nav-icon">📧</span> Visitor Emails
+        </a>
+        <a href="#section-all-visitors" class="sidebar-link" data-section="all-visitors">
+          <span class="nav-icon">👥</span> All Visitors
+        </a>
+        <a href="#section-page-visits" class="sidebar-link" data-section="page-visits">
+          <span class="nav-icon">📄</span> Page Visits
+        </a>
+        <a href="#section-mail-clicks" class="sidebar-link" data-section="mail-clicks">
+          <span class="nav-icon">✉️</span> Mail Clicks
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button type="button" id="logoutBtn" class="sidebar-logout">
+          <span>🚪</span> Log out
+        </button>
+      </div>
+    </aside>
+
+    <!-- Mobile topbar -->
+    <header class="admin-topbar">
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+      <div class="topbar-title">
+        <span class="topbar-icon">👑</span> Big Daddy Admin
+      </div>
+      <div class="topbar-status">
+        <span id="topbarStatusBadge" class="status-dot status-checking"></span>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="admin-main">
+
+      <!-- ── Overview ── -->
+      <section id="section-overview" class="dash-section">
+        <div class="section-header">
+          <h2>Overview</h2>
+          <button type="button" id="refreshBtn" class="btn-icon" title="Refresh data">🔄</button>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card stat-gold">
+            <div class="stat-icon">👥</div>
+            <div class="stat-body">
+              <div class="stat-value" id="statTotalVisitors">—</div>
+              <div class="stat-label">Total Visitors</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📄</div>
+            <div class="stat-body">
+              <div class="stat-value" id="statTotalVisits">—</div>
+              <div class="stat-label">Total Page Views</div>
+            </div>
+          </div>
+          <div class="stat-card stat-green">
+            <div class="stat-icon">📅</div>
+            <div class="stat-body">
+              <div class="stat-value" id="statTodayVisitors">—</div>
+              <div class="stat-label">Today's Visitors</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🔍</div>
+            <div class="stat-body">
+              <div class="stat-value" id="statTodayVisits">—</div>
+              <div class="stat-label">Today's Page Views</div>
+            </div>
+          </div>
+          <div class="stat-card stat-blue">
+            <div class="stat-icon">📧</div>
+            <div class="stat-body">
+              <div class="stat-value" id="statEmails">—</div>
+              <div class="stat-label">Visitor Emails</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="refresh-info">
+          Auto-refreshes every 20 seconds &nbsp;·&nbsp; Last updated: <span id="lastUpdated">—</span>
+        </div>
+      </section>
+
+      <!-- ── Website Status ── -->
+      <section id="section-website" class="dash-section">
+        <div class="section-header">
+          <h2>Website Status</h2>
+          <span id="siteStatusBadge" class="badge">Checking…</span>
+        </div>
+        <p class="section-desc">Take the public site offline for maintenance. Admin panel stays accessible while the site is down.</p>
+
+        <div class="status-controls">
+          <div class="status-card" id="statusCardUp">
+            <div class="status-card-icon">✅</div>
+            <div class="status-card-body">
+              <div class="status-card-title">Website is Live</div>
+              <div class="status-card-desc">Visitors can access all public pages normally.</div>
+            </div>
+          </div>
+          <div class="status-card" id="statusCardDown" style="display:none">
+            <div class="status-card-icon">🔴</div>
+            <div class="status-card-body">
+              <div class="status-card-title">Website is Down</div>
+              <div class="status-card-desc">Visitors see a maintenance page. Only admin works.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button type="button" id="siteDownBtn" class="btn btn-danger">
+            🔴 Take Website Offline
+          </button>
+          <button type="button" id="siteUpBtn" class="btn btn-success">
+            ✅ Bring Website Online
+          </button>
+        </div>
+        <p id="siteStatusMsg" class="feedback-msg" style="display:none"></p>
+      </section>
+
+      <!-- ── WhatsApp Number ── -->
+      <section id="section-whatsapp" class="dash-section">
+        <div class="section-header">
+          <h2>WhatsApp Contact Number</h2>
+        </div>
+        <p class="section-desc">
+          Change the WhatsApp number displayed across the entire website. All WhatsApp buttons update automatically.
+          Use full number with country code — digits only (e.g. <code>918889624193</code>).
+        </p>
+
+        <form id="settingsForm" class="settings-form">
+          <div class="form-group">
+            <label for="whatsappInput">WhatsApp Number</label>
+            <div class="input-with-icon">
+              <span class="input-prefix">💬</span>
+              <input type="text" id="whatsappInput" inputmode="numeric" placeholder="918889624193" required maxlength="15">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Save Number</button>
+        </form>
+        <p id="settingsMsg" class="feedback-msg" style="display:none"></p>
+
+        <div class="info-box">
+          <strong>Preview:</strong> wa.me/<span id="waNumberPreview" class="wa-preview">—</span>
+        </div>
+      </section>
+
+      <!-- ── DMCA Toggle ── -->
+      <section id="section-dmca" class="dash-section">
+        <div class="section-header">
+          <h2>DMCA Protection</h2>
+        </div>
+        <p class="section-desc">Shows a DMCA badge and link in the site footer on every page.</p>
+        <label class="toggle-label">
+          <div class="toggle-switch">
+            <input type="checkbox" id="dmcaToggle">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </div>
+          <span>Display DMCA badge on website</span>
+        </label>
+      </section>
+
+      <!-- ── Today's Visitors ── -->
+      <section id="section-today" class="dash-section">
+        <div class="section-header">
+          <h2>Today's Visitors</h2>
+          <span class="badge badge-blue" id="todayCount">0</span>
+        </div>
+        <p class="section-desc">People who visited today (India time, IST). Refreshes automatically.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Last Seen</th>
+                <th>Email</th>
+                <th>IP Address</th>
+                <th>Last Page</th>
+                <th>Visits</th>
+              </tr>
+            </thead>
+            <tbody id="todayTableBody">
+              <tr><td colspan="5" class="empty-row">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── Visitor Emails ── -->
+      <section id="section-emails" class="dash-section">
+        <div class="section-header">
+          <h2>Visitor Emails</h2>
+          <span class="badge badge-gold" id="emailCount">0</span>
+        </div>
+        <p class="section-desc">Emails visitors entered on the site. Only emails they type are stored — no automatic collection.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Email</th>
+                <th>Last Visit</th>
+                <th>Total Visits</th>
+                <th>Last Page</th>
+              </tr>
+            </thead>
+            <tbody id="emailTableBody">
+              <tr><td colspan="4" class="empty-row">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── All Visitors ── -->
+      <section id="section-all-visitors" class="dash-section">
+        <div class="section-header">
+          <h2>All Visitors</h2>
+          <span class="badge" id="allVisitorsCount">0</span>
+        </div>
+        <p class="section-desc">Everyone who opened the website while the server was running (most recent first).</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Last Seen</th>
+                <th>First Seen</th>
+                <th>Email</th>
+                <th>IP Address</th>
+                <th>Last Page</th>
+                <th>Visits</th>
+              </tr>
+            </thead>
+            <tbody id="visitorsTableBody">
+              <tr><td colspan="6" class="empty-row">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── Page Visits ── -->
+      <section id="section-page-visits" class="dash-section">
+        <div class="section-header">
+          <h2>Recent Page Visits</h2>
+        </div>
+        <p class="section-desc">Each individual page view with time, email (if given), and referrer. Shows last 100.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>When</th>
+                <th>Page</th>
+                <th>Email</th>
+                <th>Referrer</th>
+                <th>IP</th>
+              </tr>
+            </thead>
+            <tbody id="visitsTableBody">
+              <tr><td colspan="5" class="empty-row">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── Mail Clicks ── -->
+      <section id="section-mail-clicks" class="dash-section">
+        <div class="section-header">
+          <h2>Contact Email Clicks</h2>
+          <button type="button" id="clearMailBtn" class="btn btn-ghost btn-sm">🗑 Clear Log</button>
+        </div>
+        <p class="section-desc">Logged whenever a visitor clicks a <code>mailto:</code> link on the site.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>When</th>
+                <th>Email Clicked</th>
+                <th>Page</th>
+                <th>IP</th>
+              </tr>
+            </thead>
+            <tbody id="mailTableBody">
+              <tr><td colspan="4" class="empty-row">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Mobile sidebar overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+{
+  "whatsappNumber": "8888888888",
+  "dmcaEnabled": true,
+  "siteOnline": true,
+  "mailClicks": [],
+  "pageVisits": [
+    {
+      "id": "284cd02a-63d8-4de9-97a5-7aca5a14ee62",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T09:23:05.515Z",
+      "ip": "::1"
+    },
+    {
+      "id": "7b18330f-8249-489e-9a5c-24c0d230471b",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T09:24:34.899Z",
+      "ip": "::1"
+    },
+    {
+      "id": "e10d0ce2-cda3-4863-8066-ded4e9694cb6",
+      "page": "/dmca.html",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T09:24:48.656Z",
+      "ip": "::1"
+    },
+    {
+      "id": "b4f697d0-c40a-43de-8706-c1e377745559",
+      "page": "/dmca.html",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T09:25:34.783Z",
+      "ip": "::1"
+    },
+    {
+      "id": "2a99cef9-ad15-4968-b1e9-a028fefc4ff4",
+      "page": "/dmca.html",
+      "referrer": "http://localhost:3000/dmca.html",
+      "at": "2026-10-05T09:25:42.002Z",
+      "ip": "::1"
+    },
+    {
+      "id": "c99f12dd-18aa-4056-b481-fb2e85989259",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T09:44:51.291Z",
+      "ip": "::1"
+    },
+    {
+      "id": "d2a457af-391f-4389-a1e3-1c8d624720ac",
+      "visitorId": "3a9397a5-2e45-4aff-ba01-fd85690e5210",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T15:03:50.079Z",
+      "ip": "::1"
+    },
+    {
+      "id": "88aafd63-23c7-4b88-883e-264ded527761",
+      "visitorId": "3a9397a5-2e45-4aff-ba01-fd85690e5210",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T15:03:57.462Z",
+      "ip": "::1"
+    },
+    {
+      "id": "afbbb299-aac8-404f-9e70-497cb2daef5e",
+      "visitorId": "b52269f0-43f7-496e-a9bb-281a0847b6b6",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:11:09.758Z",
+      "ip": "::1"
+    },
+    {
+      "id": "ba2cc9dc-3dc0-451e-a487-af4629fe31b9",
+      "visitorId": "b52269f0-43f7-496e-a9bb-281a0847b6b6",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:13:13.788Z",
+      "ip": "::1"
+    },
+    {
+      "id": "5dfbdbae-e2f7-4181-9a27-b102e1177d86",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:15:08.905Z",
+      "ip": "::1"
+    },
+    {
+      "id": "f785d6df-f1ab-4dc0-a9c3-449fa0ec98a8",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:15:22.134Z",
+      "ip": "::1"
+    },
+    {
+      "id": "9c4c4f84-e6aa-41a4-a0ee-a2ce294d8ce0",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:15:23.473Z",
+      "ip": "::1"
+    },
+    {
+      "id": "7e8fa4d9-e201-4fef-a3fa-1883ad122465",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:15:24.456Z",
+      "ip": "::1"
+    },
+    {
+      "id": "97a47015-1aac-4e9e-8d34-3f79ec04ecdd",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:15:34.753Z",
+      "ip": "::1"
+    },
+    {
+      "id": "c991329e-061e-4b81-9451-796aa65af2be",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-05T16:15:50.952Z",
+      "ip": "::1"
+    },
+    {
+      "id": "3916554b-7c57-4b20-af81-ec8ad457f95a",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T05:20:33.061Z",
+      "ip": "::1"
+    },
+    {
+      "id": "4574c5e5-8d1d-4b80-8739-86f1e14c2398",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T05:20:45.824Z",
+      "ip": "::1"
+    },
+    {
+      "id": "72392e08-24a0-4720-b32a-9121cc80be63",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T05:24:29.101Z",
+      "ip": "::1"
+    },
+    {
+      "id": "708ecc0a-654e-4a58-9cd5-0f7e352455a8",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:21:01.142Z",
+      "ip": "::1"
+    },
+    {
+      "id": "f55bac64-0820-4780-a2b5-8017473a65c4",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:21:02.539Z",
+      "ip": "::1"
+    },
+    {
+      "id": "4ec8dc3f-dbad-42d8-823a-4523d77538a5",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:21:17.492Z",
+      "ip": "::1"
+    },
+    {
+      "id": "47abcf6a-fec5-4f20-82c7-cf61d0dc1a32",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:21:44.228Z",
+      "ip": "::1"
+    },
+    {
+      "id": "c44779ba-f009-4140-9efc-1736bfc5a836",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:31.080Z",
+      "ip": "::1"
+    },
+    {
+      "id": "63307048-8aa1-4e43-8cbf-d571f97e36d7",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:31.947Z",
+      "ip": "::1"
+    },
+    {
+      "id": "4c885999-c8b6-4563-ba48-8217deb24251",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:32.511Z",
+      "ip": "::1"
+    },
+    {
+      "id": "af543685-37f4-4dd6-9a13-ee726c57f066",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:32.806Z",
+      "ip": "::1"
+    },
+    {
+      "id": "5f3de7c3-7564-4c3e-9f9d-47f871c658a9",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:33.231Z",
+      "ip": "::1"
+    },
+    {
+      "id": "d7009e5d-b553-4738-b4c7-50f57f0e2af9",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:33.960Z",
+      "ip": "::1"
+    },
+    {
+      "id": "c9c4e919-ebe4-44a2-bcd4-6061018f50a2",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:36.688Z",
+      "ip": "::1"
+    },
+    {
+      "id": "c7749da4-d263-4cce-b6b5-13e6c6aa6c9e",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:37.431Z",
+      "ip": "::1"
+    },
+    {
+      "id": "a0a990e3-53ec-4f4c-9ffa-1ad0e707ee10",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:37.704Z",
+      "ip": "::1"
+    },
+    {
+      "id": "0266c6a0-6d27-49f5-bf01-d83adff5b3f0",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:43.396Z",
+      "ip": "::1"
+    },
+    {
+      "id": "27854196-b90a-4a60-a347-b5fa73d279d8",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:22:54.724Z",
+      "ip": "::1"
+    },
+    {
+      "id": "0487769b-236d-4fcd-9e25-8f6fd6b3dbe7",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:25:04.986Z",
+      "ip": "::1"
+    },
+    {
+      "id": "e83fa086-866b-43ef-9ee4-47c709ba03ea",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:25:08.822Z",
+      "ip": "::1"
+    },
+    {
+      "id": "3f6984a8-f3e6-4164-8153-9b4e7c0ae68e",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:28:57.878Z",
+      "ip": "::1"
+    },
+    {
+      "id": "ae68de36-96a0-44b1-b816-7610b5d76b16",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "page": "/",
+      "referrer": "http://localhost:3000/",
+      "at": "2026-10-06T08:29:04.289Z",
+      "ip": "::1"
+    }
+  ],
+  "visitors": [
+    {
+      "id": "984cf85b-fa9b-456a-8a19-a727586cb2f6",
+      "visitorId": "3a9397a5-2e45-4aff-ba01-fd85690e5210",
+      "email": "visitor.test@gmail.com",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cursor/3.23.12 Chrome/148.0.7778.280 Electron/42.10.0 Safari/537.36",
+      "firstSeen": "2026-10-05T15:03:50.073Z",
+      "lastSeen": "2026-10-05T15:04:16.176Z",
+      "visitCount": 3,
+      "lastPage": "/",
+      "pages": [
+        "/"
+      ]
+    },
+    {
+      "id": "9aefeac8-d8a0-44e3-923b-79e146a6712d",
+      "visitorId": "b52269f0-43f7-496e-a9bb-281a0847b6b6",
+      "email": "new.visitor@gmail.com",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cursor/3.23.12 Chrome/148.0.7778.280 Electron/42.10.0 Safari/537.36",
+      "firstSeen": "2026-10-05T16:11:09.757Z",
+      "lastSeen": "2026-10-05T16:13:34.503Z",
+      "visitCount": 3,
+      "lastPage": "/",
+      "pages": [
+        "/"
+      ]
+    },
+    {
+      "id": "35782b14-c659-487b-b70d-766782f8543e",
+      "visitorId": "c3822e86-cae0-4dfc-874b-e2b610a771b5",
+      "email": "",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "firstSeen": "2026-10-05T16:15:08.904Z",
+      "lastSeen": "2026-10-06T08:29:04.289Z",
+      "visitCount": 28,
+      "lastPage": "/",
+      "pages": [
+        "/"
+      ]
+    }
+  ]
+}
